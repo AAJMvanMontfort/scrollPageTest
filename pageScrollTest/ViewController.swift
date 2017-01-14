@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     var images = [UIImageView]()
@@ -42,7 +42,8 @@ class ViewController: UIViewController {
         }
         
         scrollView.contentSize = CGSize(width: contentSize, height: view.frame.size.height)
-    }
+        view.addGestureRecognizer(scrollView.panGestureRecognizer)
     
+    }    
 }
 
