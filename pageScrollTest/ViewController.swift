@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIGestureRecognizerDelegate {
+class ViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     var images = [UIImageView]()
